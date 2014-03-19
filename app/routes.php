@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/homepage', function()
+Route::get('homepage', function()
 {
-    return View::make('helloWorld');
+    return View::make('homepage');
 });
