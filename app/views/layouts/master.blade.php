@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>
+            @yield('page-title')
+        </title>
+    </head>
+    <body>
+        @yield('nav-bar')
+        @yield('content')
+    </body>
+</html>
