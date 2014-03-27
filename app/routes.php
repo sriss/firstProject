@@ -13,10 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    Newrelic::nameTransaction('hello');
+    $view = View::make('hello');
+    Newrelic::endOfTransaction();
+    return $view;
 });
 
 Route::get('homepage', function()
 {
-    return View::make('homepage');
+    Newrelic::nameTransaction('homepage');
+    $view = View::make('homepage');
+    Newrelic::endOfTransaction();
+    return $view;
 });

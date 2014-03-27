@@ -69,5 +69,5 @@ require $framework.'/Illuminate/Foundation/start.php';
 | from the actual running of the application and sending responses.
 |
 */
-
+Newrelic::setAppName('firstProject');
 return $app;
