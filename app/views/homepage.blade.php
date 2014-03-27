@@ -14,4 +14,5 @@
 @section('content')
 <div><p>This is my body content.</p></div>
 <div><img src="{{asset('assets/images/snorlax.jpg')}}" alt="snorlax" style="height: 50%; width: 50%;"></div>
+<?php phpinfo(); ?>
 @stop
